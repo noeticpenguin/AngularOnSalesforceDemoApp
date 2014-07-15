@@ -23,7 +23,9 @@
 <script type="text/javascript" src="https://localhost:8000/demoApp/lib/chosen.js"/>
 <script type="text/javascript" src="https://localhost:8000/demoApp/lib/ui-bootstrap-tpls-0.11.0.min.js"/>
 <script type="text/javascript" src="https://localhost:8000/demoApp/lib/ui.router.min.js"/>
-<script type="text/javascript" src="https://localhost:8000/demoApp/lib/angular-classy.min.js"/>
+<script type="text/javascript" src="https://localhost:8000/demoApp/lib/lodash.underscore.min.js"/>
+<script type="text/javascript" src="https://localhost:8000/demoApp/lib/safeApply.min.js"/>
+<script type="text/javascript" src="https://localhost:8000/demoApp/lib/Restangular.min.js"/>
 <script type="text/javascript" src="https://localhost:8000/demoApp/lib/ngForce.js"/>
 
 <!-- Application Module -->

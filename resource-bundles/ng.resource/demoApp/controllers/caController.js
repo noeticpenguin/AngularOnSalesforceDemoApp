@@ -4,6 +4,6 @@ app.controller('caController', ['$scope', '$log', 'userService',
 	$scope.loaded = "true";
 	$scope.showedByButton = false;
 
-	$log.log("GetUser results:", userService.getUser());
+	$log.log("GetEmail results:", userService.email());
 
 }]);

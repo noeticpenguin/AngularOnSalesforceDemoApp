@@ -3,7 +3,7 @@ app.factory('userService', ['$q', 'sfrquery', function ($q, sfrquery) {
 	 * User Service encapsultates a given user.
 	 */
 
-	return {
+	var userService = {
 		// internal (private) properties:
 		_user: {},
 		_email: "",
@@ -13,7 +13,7 @@ app.factory('userService', ['$q', 'sfrquery', function ($q, sfrquery) {
 		getUser: function(){
 			var pGetUser = sfrquery.query("SELECT Id, username, Email FROM user WHERE Alias = 'Chatter'");
 			pGetUser.then(userService.setUserDetails);
-			return _user;
+			return userService._user;
 		},
 		setUserDetails: function(data){
 			userService._user = data;
@@ -41,4 +41,5 @@ app.factory('userService', ['$q', 'sfrquery', function ($q, sfrquery) {
 
 		}
 	};
+	return userService;
 }]);
