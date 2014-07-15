@@ -31,6 +31,10 @@
 <!-- Application Module -->
 <script type="text/javascript" src="https://localhost:8000/demoApp/application.js"/>
 
+<!-- Angular Directives (Custom) -->
+<script type="text/javascript" src="https://localhost:8000/demoApp/directives/userInfo.js"/>
+<script type="text/javascript" src="https://localhost:8000/demoApp/services/caseService.js"/>
+
 <!-- Angular Controllers -->
 <!-- <apex:includeScript value="{!URLFOR($Resource.ng, 'demoApp/controllers/mainController.js')}"/>
 <apex:includeScript value="{!URLFOR($Resource.ng, 'demoApp/controllers/caController.js')}"/>

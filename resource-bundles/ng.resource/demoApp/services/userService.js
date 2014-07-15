@@ -1,4 +1,4 @@
-app.factory('userService', ['$q', 'sfrquery', function ($q, sfrquery) {
+app.factory('userService', ['$q', '$log', 'sfrquery', function ($q, $log, sfrquery) {
 	/**
 	 * User Service encapsultates a given user.
 	 */
@@ -6,19 +6,29 @@ app.factory('userService', ['$q', 'sfrquery', function ($q, sfrquery) {
 	var userService = {
 		// internal (private) properties:
 		_user: {},
+		_userList: [],
 		_email: "",
 		_username: "",
 
 		// public methods
 		getUser: function(){
 			var pGetUser = sfrquery.query("SELECT Id, username, Email FROM user WHERE Alias = 'Chatter'");
-			pGetUser.then(userService.setUserDetails);
-			return userService._user;
+			return pGetUser.then(userService.setUserDetails);
+		},
+		getUsers: function(){
+			var pGetUser1 = sfrquery.query("SELECT Id, username, Email FROM user");
+			return pGetUser1.then(userService.setUserList);
+		},
+		setUserList: function(data){
+			userService._userList = data;
+		},
+		userList: function(data){
+			return userService._userList;
 		},
 		setUserDetails: function(data){
-			userService._user = data;
-			userService._email = data.Email;
-			userService._username = data.Username;
+			userService._user = data[0];
+			userService._email = data[0].Email;
+			userService._username = data[0].Username;
 			return data;
 		},
 		findUser: function(){
@@ -34,7 +44,9 @@ app.factory('userService', ['$q', 'sfrquery', function ($q, sfrquery) {
 			if (userService._email){
 				return userService._email;
 			} else {
-				return userService.getUser().Email;
+				return userService.getUser().then(function(x){
+					$log.log(x);
+				});
 			}
 		},
 		username: function() {

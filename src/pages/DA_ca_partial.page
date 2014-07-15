@@ -6,8 +6,18 @@ docType="html-5.0"
 
 <h1>Welcome to California</h1>
 
-<button ng-click="showedByButton = !showedByButton"></button>
+<ul class="example-animate-container">
+	<li class="animate-repeat" ng-repeat="user in users">
+	 [{{$index + 1}}] {{user.Username}} who has email at {{user.Email}}.
+	</li>
+</ul>
 
-<div style="background:blue; width:400px; height:400px;" ng-if="showedByButton">awesome sauce</div>
-	
+
+ 	<table>
+		<tr><td>Name</td><td>Email</td></tr>
+		<tbody>
+			<user-info user="user" ng-repeat="user in users"/> 	
+		</tbody>
+	</table>
+
 </apex:page>

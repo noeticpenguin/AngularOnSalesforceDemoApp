@@ -1,0 +1,11 @@
+<apex:page showHeader="false"
+sidebar="false"
+standardStylesheets="false"
+docType="html-5.0"
+applyHtmlTag="false">
+
+<tr>
+	<td>Name: {{user.Username}}</td> <td>Email: {{user.Email}}</td>
+</tr>
+	
+</apex:page>
