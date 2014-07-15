@@ -24,6 +24,7 @@
 <script type="text/javascript" src="https://localhost:8000/demoApp/lib/ui-bootstrap-tpls-0.11.0.min.js"/>
 <script type="text/javascript" src="https://localhost:8000/demoApp/lib/ui.router.min.js"/>
 <script type="text/javascript" src="https://localhost:8000/demoApp/lib/angular-classy.min.js"/>
+<script type="text/javascript" src="https://localhost:8000/demoApp/lib/ngForce.js"/>
 
 <!-- Application Module -->
 <script type="text/javascript" src="https://localhost:8000/demoApp/application.js"/>
@@ -36,5 +37,8 @@
 <script type="text/javascript" src="https://localhost:8000/demoApp/controllers/mainController.js"/>
 <script type="text/javascript" src="https://localhost:8000/demoApp/controllers/caController.js"/>
 <script type="text/javascript" src="https://localhost:8000/demoApp/controllers/bcController.js"/>
+
+<script type="text/javascript" src="https://localhost:8000/demoApp/services/userService.js"/>
+
 
 </apex:component>
