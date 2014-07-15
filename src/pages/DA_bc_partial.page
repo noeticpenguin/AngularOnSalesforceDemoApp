@@ -1,0 +1,9 @@
+<apex:page showHeader="false"
+sidebar="false"
+standardStylesheets="false"
+docType="html-5.0"
+>
+
+<h1>Welcome to British Columbia</h1>
+	
+</apex:page>

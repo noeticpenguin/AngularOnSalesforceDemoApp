@@ -1,0 +1,67 @@
+{
+    "DA_bc_partial.page": {
+        "createdById": "005o0000000O9HlAAK", 
+        "createdByName": "Kevin Poorman", 
+        "createdDate": "2014-07-14 14:32:46", 
+        "fileName": "unpackaged/pages/DA_bc_partial.page", 
+        "fullName": "DA_bc_partial", 
+        "id": "066o0000000OmEcAAK", 
+        "lastModifiedById": "005o0000000O9HlAAK", 
+        "lastModifiedByName": "Kevin Poorman", 
+        "lastModifiedDate": "2014-07-14 14:33:13", 
+        "mmState": "clean", 
+        "type": "ApexPage"
+    }, 
+    "DA_ca_partial.page": {
+        "createdById": "005o0000000O9HlAAK", 
+        "createdByName": "Kevin Poorman", 
+        "createdDate": "2014-07-14 14:28:30", 
+        "fileName": "unpackaged/pages/DA_ca_partial.page", 
+        "fullName": "DA_ca_partial", 
+        "id": "066o0000000OmESAA0", 
+        "lastModifiedById": "005o0000000O9HlAAK", 
+        "lastModifiedByName": "Kevin Poorman", 
+        "lastModifiedDate": "2014-07-14 14:48:07", 
+        "mmState": "dirty", 
+        "type": "ApexPage"
+    }, 
+    "demoApp.page": {
+        "createdById": "005o0000000O9HlAAK", 
+        "createdByName": "Kevin Poorman", 
+        "createdDate": "2014-07-14 10:56:32", 
+        "fileName": "unpackaged/pages/demoApp.page", 
+        "fullName": "demoApp", 
+        "id": "066o0000000Ohs1AAC", 
+        "lastModifiedById": "005o0000000O9HlAAK", 
+        "lastModifiedByName": "Kevin Poorman", 
+        "lastModifiedDate": "2014-07-15 09:54:24", 
+        "mmState": "clean", 
+        "type": "ApexPage"
+    }, 
+    "ng.resource": {
+        "createdById": "005o0000000O9HlAAK", 
+        "createdByName": "Kevin Poorman", 
+        "createdDate": "2014-07-14 10:34:31", 
+        "fileName": "unpackaged/staticresources/ng.resource", 
+        "fullName": "ng", 
+        "id": "081o0000000Lr5cAAC", 
+        "lastModifiedById": "005o0000000O9HlAAK", 
+        "lastModifiedByName": "Kevin Poorman", 
+        "lastModifiedDate": "2014-07-14 14:33:50", 
+        "mmState": "clean", 
+        "type": "StaticResource"
+    }, 
+    "ngResources.component": {
+        "createdById": "005o0000000O9HlAAK", 
+        "createdByName": "Kevin Poorman", 
+        "createdDate": "2014-07-14 11:00:16", 
+        "fileName": "unpackaged/components/ngResources.component", 
+        "fullName": "ngResources", 
+        "id": "099o0000000TdHBAA0", 
+        "lastModifiedById": "005o0000000O9HlAAK", 
+        "lastModifiedByName": "Kevin Poorman", 
+        "lastModifiedDate": "2014-07-15 09:40:56", 
+        "mmState": "clean", 
+        "type": "ApexComponent"
+    }
+}

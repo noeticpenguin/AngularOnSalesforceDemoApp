@@ -1,0 +1,10 @@
+{
+    "levels": {
+        "Apex_code": "DEBUG", 
+        "Workflow": "INFO", 
+        "Apex_profiling": "DEBUG", 
+        "Callout": "INFO", 
+        "Db": "INFO", 
+        "Validation": "INFO"
+    }
+}

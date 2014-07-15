@@ -1,0 +1,11 @@
+/*
+
+MavensMate Project settings
+NOTE: MavensMate Project settings will override MavensMate default and user settings
+
+*/
+
+{
+   //"mm_api_version" : 29.0
+   //"mm_compile_with_tooling_api" : true
+}

@@ -1,0 +1,19 @@
+<apex:page showHeader="false"
+sidebar="false"
+standardStylesheets="false"
+docType="html-5.0"
+>
+
+<c:ngResources />
+	
+	<body ng-app="demoApp">
+
+		<!-- Either of these links changes which state is active. -->
+		<a ui-sref="California">Go to California</a>
+		<a ui-sref="BritishColumbia">Go to Paradise</a>
+		<!-- When you click on one of the above links, the data in ui-view is swapped out -->
+		<!-- The *active* state is displayed in the ui-view tag below. -->
+		<ui-view> </ui-view>
+	</body>
+
+</apex:page>

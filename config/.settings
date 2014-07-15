@@ -1,0 +1,19 @@
+{
+    "username": "kjp-ngtrain@codefriar.com", 
+    "project_name": "ngtraining", 
+    "org_url": "", 
+    "namespace": "", 
+    "metadata_container": "1dco0000000UOb5AAG", 
+    "environment": "developer", 
+    "workspace": "/Users/kpoorman/Documents/mmProjects", 
+    "id": "U0TBJG0MXDOJ1R09ZOODCH9GAD4JZ7P3", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "CustomObject", 
+        "Profile", 
+        "StaticResource"
+    ]
+}
