@@ -4,7 +4,7 @@
 * Description
 */
 var app = angular.module('demoApp', [
-	'ui.bootstrap', 'localytics.directives', 'ui.router', 'classy'
+	'ui.bootstrap', 'localytics.directives', 'ui.router', 'classy', 'ngForce'
 	]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
