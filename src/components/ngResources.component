@@ -1,4 +1,4 @@
-<apex:component>
+<apex:component >
 
 <!-- CSS Includes -->
 <apex:stylesheet value="{!URLFOR($Resource.ng, 'demoApp/css/bootstrap.min.css')}" />

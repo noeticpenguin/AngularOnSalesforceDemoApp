@@ -3,5 +3,5 @@
     <apiVersion>29.0</apiVersion>
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
-    <label>demoApp</label>
+    <label>ngForceRestAPIDemo</label>
 </ApexPage>

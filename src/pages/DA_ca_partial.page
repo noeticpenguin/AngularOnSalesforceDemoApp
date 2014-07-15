@@ -6,4 +6,8 @@ docType="html-5.0"
 
 <h1>Welcome to California</h1>
 
-</apex:page> 
+<button ng-click="showedByButton = !showedByButton"></button>
+
+<div style="background:blue; width:400px; height:400px;" ng-if="showedByButton">awesome sauce</div>
+	
+</apex:page>

@@ -5,6 +5,7 @@ docType="html-5.0"
 >
 
 <c:ngResources />
+<c:ngForce />
 	
 	<body ng-app="demoApp">
 
