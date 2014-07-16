@@ -17,6 +17,31 @@ module.exports = function(grunt) {
 				}
 			},
 		},
+		jasmine: {
+			src: [
+				'resource-bundles/ng.resource/demoApp/application*.js',
+				'resource-bundles/ng.resource/demoApp/controllers/*.js',
+				'resource-bundles/ng.resource/demoApp/directives/*.js',
+				'resource-bundles/ng.resource/demoApp/filters/*.js',
+				'resource-bundles/ng.resource/demoApp/services/*.js',
+			],
+			options: {
+				vendor: [
+					'resource-bundles/ng.resource/demoApp/lib/jquery-2.1.1.min.js',
+					'resource-bundles/ng.resource/demoApp/lib/angular.min.js',
+					'resource-bundles/ng.resource/demoApp/lib/lodash.underscore.min.js',
+					'resource-bundles/ng.resource/demoApp/lib/Restangular.min.js',
+					'resource-bundles/ng.resource/demoApp/lib/safeApply.min.js',
+					'resource-bundles/ng.resource/demoApp/lib/ngForce.js',
+					'resource-bundles/ng.resource/demoApp/lib/ui-bootstrap-tpls-0.11.0.min.js',
+					'resource-bundles/ng.resource/demoApp/lib/ui.router.min.js',
+					'resource-bundles/ng.resource/demoApp/lib/angular.mocks.js'
+				],
+				specs: ['resource-bundles/ng.resource/demoApp/specs/**/*_unit.js']
+			},
+			version: '2.0.0',
+			keepRunner: true,
+		}
 	});
 
 	grunt.registerTask('default', 'protractor');
