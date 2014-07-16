@@ -1,0 +1,102 @@
+
+/* Styles for booking row colors */
+
+.gantt-booking-sold {
+    background-color: #FF6347; /* Red */
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.gantt-booking-ng-sold {
+    background-color: white;
+    border-color: #D94F3D; /* Dark Red */
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.gantt-booking-hold {
+    background-color: #FFFF47; /* Yellow */
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.gantt-booking-ng-hold {
+    background-color: white;
+    border-color: #F1C23B; /* Dark Yellow */
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.gantt-booking-pre-emptable {
+    background-color: #DF8D82; /* Peach */
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.gantt-booking-down {
+    background-color: #a2a2a2; /* Gray */
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.gantt-booking-digital {
+    background-color: white;
+    border-color: black;
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.gantt-availability-none {
+    background-color: red;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    border-radius: 3px;
+}
+
+.gantt-availability-low {
+    background-color: yellow;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    border-radius: 3px;
+}
+
+.gantt-availability-ok {
+    background-color: rgb(40, 209, 40);
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    border-radius: 3px;
+}
+
+/* Styles for timespans */
+
+.gantt-flight-timespan {
+    color: black;
+    background-color: rgba(158, 158, 158, 0.5);
+    border-left: 1px solid rgba(158, 158, 158, 1);
+    border-right: 1px solid rgba(158, 158, 158, 1);
+}
+
+.gantt-legend {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}

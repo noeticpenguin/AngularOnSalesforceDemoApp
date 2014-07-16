@@ -1,0 +1,188 @@
+.pricing-container {
+    overflow-x: scroll;
+}
+
+body { 
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+
+table { 
+    border-collapse: separate !important; 
+    margin-left: 20px;
+} 
+
+div.alerts-container {
+    padding: 10px;
+}
+
+
+td, th { 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    padding: 2px;
+}
+
+td.output {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+.item-row td, tr.flight-summary-row td, tr.plan-summary-row td {
+    text-align: right;
+}
+
+td.indent, th.indent {
+    width: 40px;
+}
+
+tr.plan-summary-row {
+    /* background-color: #33ADE0; tint(0099D8, 20) */
+    /* color: white; */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+tr.flight-summary-row {
+    border-top: 1px solid;
+    border-color: #00ABF2;
+}
+
+td.input { 
+    padding: 0px;
+}
+
+tr.flight-summary-row > td {
+    border-top: 1px solid;
+    border-color: #00abf2;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+tr.plan-summary-row > td {
+    padding-bottom: 8px;
+    font-size: 11px;
+    border: 1px solid;
+    border-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+tr.spacer-row > td {
+    border-bottom-color: white;
+    height: 30px;
+}
+
+tr.title-row {
+    text-align: left;
+}
+
+tr.flight-headers-row {
+    font-weight: bold;
+}
+
+tr.plan-headers-row {
+    font-weight: bold;
+}
+
+tr.flight-headers-row > th, tr.plan-headers-row > th { 
+    text-align: right; 
+    border-bottom: 2px solid;
+    border-color: #0099D8;
+}
+
+th { 
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 8px;
+    cursor: default;
+}
+td.output { 
+    background-color: white;
+    cursor: default;
+    white-space: nowrap;
+}
+
+div.tooltip-inner {
+    white-space: normal;
+}
+
+td.hidden {
+    display: table-cell !important;
+    visibility: visible !important;
+    color: #8996A0 !important;
+}
+
+
+th.hidden {
+    display: table-cell !important;
+    visibility: visible !important;
+    color: #5E676E !important;
+}
+
+tr.plan-summary-row > td.hidden {
+    color: #8996A0 !important;
+}
+
+tr.flight-summary-row > td.hidden {
+    color: #8996A0 !important;
+}
+
+td.input > div {
+    padding: 1px;
+}
+
+td input {
+    border: none !important;
+    height: 100% !important;
+    width: 100% !important;
+    background-color: #B3EEF3 !important;
+    text-align: right !important;
+    padding: 5px !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    line-height: 100% !important;
+    margin-bottom: 0px !important;
+    font-size: 11px !important;
+    color: black !important;
+    border-radius: 0px !important;
+}
+
+td input:focus {
+    outline-style: solid !important;
+    outline-offset: -1px !important;
+    outline-width: 2px !important;
+    outline-color: #00C6D7 !important;
+}
+
+button.save {
+}
+
+div.table-container {
+    display: inline-block;
+    position: relative;
+    padding-right: 80px;
+}
+
+div.table-loading-overlay {
+    background-color: white;
+    opacity: 0.65;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+img.sml-loading-spinner {
+    height: 16px;
+    width: 16px;
+    margin: 6px 10px;
+}
+
+div.sml-loading-spinner.loading {
+    display: block;
+}
