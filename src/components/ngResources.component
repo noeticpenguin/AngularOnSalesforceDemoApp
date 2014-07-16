@@ -3,6 +3,7 @@
 <!-- CSS Includes -->
 <apex:stylesheet value="{!URLFOR($Resource.ng, 'demoApp/css/bootstrap.min.css')}" />
 <apex:stylesheet value="{!URLFOR($Resource.ng, 'demoApp/css/chosen-spinner.css')}" />
+<apex:stylesheet value="{!URLFOR($Resource.ng, 'demoApp/css/bootstrap.min.css')}" />
 
 <!-- Font Awesome -->
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
@@ -43,6 +44,9 @@
 <script type="text/javascript" src="https://localhost:8000/demoApp/controllers/mainController.js"/>
 <script type="text/javascript" src="https://localhost:8000/demoApp/controllers/caController.js"/>
 <script type="text/javascript" src="https://localhost:8000/demoApp/controllers/bcController.js"/>
+
+<script type="text/javascript" src="https://localhost:8000/demoApp/controllers/AlertDemoCtrl.js"/>
+
 
 <script type="text/javascript" src="https://localhost:8000/demoApp/services/userService.js"/>
 

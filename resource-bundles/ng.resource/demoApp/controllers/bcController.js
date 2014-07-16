@@ -1,9 +1,13 @@
-app.controller('bcController', ['$scope', '$q', '$log', 'caseService', function ($scope, $q, $log, caseService) {
+app.controller('bcController', ['$scope', '$q', '$log', 'userService',
+	function($scope, $q, $log, userService) {
 
-	$scope.loaded = "true";
+		userService.userList().then(function(userList) {
+			$scope.users = userList;
+		});
 
-	$q.when(caseService.getCases()).then(function(data){
-		$scope.caseList = caseService._cases;
-	});
+		$scope.alertMe = function() {
+			alert("Awesome Sauce, the next YO app.");
+		};
 
-}]);
+	}
+]);

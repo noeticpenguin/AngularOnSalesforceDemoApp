@@ -5,5 +5,19 @@ docType="html-5.0"
 >
 
 <h1>Welcome to British Columbia</h1>
-	
+
+<tabset>
+  <tab heading="Static title">Static content</tab>
+  <tab ng-repeat="tab in users" heading="{{tab.Username}}" active="tab.active" disabled="tab.disabled">
+    {{tab.Email}}
+  </tab>
+  <tab select="alertMe()">
+    <tab-heading>
+      <i class="glyphicon glyphicon-bell"></i> Alert!
+    </tab-heading>
+    I've got an HTML heading, and a select callback. Pretty cool!
+  </tab>
+</tabset>	
+
+
 </apex:page>
