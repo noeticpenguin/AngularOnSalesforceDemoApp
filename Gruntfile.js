@@ -19,11 +19,11 @@ module.exports = function(grunt) {
 		},
 		jasmine: {
 			src: [
-				'resource-bundles/ng.resource/demoApp/application*.js',
+				'resource-bundles/ng.resource/demoApp/application.js',
 				'resource-bundles/ng.resource/demoApp/controllers/*.js',
 				'resource-bundles/ng.resource/demoApp/directives/*.js',
 				'resource-bundles/ng.resource/demoApp/filters/*.js',
-				'resource-bundles/ng.resource/demoApp/services/*.js',
+				'resource-bundles/ng.resource/demoApp/services/userService.js',
 			],
 			options: {
 				vendor: [

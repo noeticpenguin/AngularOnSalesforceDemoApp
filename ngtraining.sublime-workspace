@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"filter",
+				"$filter	AngularJS"
+			],
+			[
+				"_user",
+				"_userList"
+			],
+			[
+				"getC",
+				"getCasesForPatientQuery"
+			],
+			[
+				"direct",
+				"directivelong	Angular.js"
+			],
+			[
+				"user",
+				"userService"
+			],
+			[
 				"new",
 				"newOwner"
 			],
@@ -494,26 +514,6 @@
 			[
 				"gender",
 				"genderId"
-			],
-			[
-				"FlightService.flightData.",
-				"FlightService.flightData.selectedMarket.Id"
-			],
-			[
-				"quer",
-				"queryTxt"
-			],
-			[
-				"wh",
-				"whereTxt"
-			],
-			[
-				"select",
-				"selectTxt"
-			],
-			[
-				"colum",
-				"columns"
 			]
 		]
 	},
@@ -523,31 +523,48 @@
 			"file": "resource-bundles/ng.resource/demoApp/application.js",
 			"settings":
 			{
-				"buffer_size": 519,
+				"buffer_size": 523,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/components/ngResources.component",
+			"file": "Gruntfile.js",
 			"settings":
 			{
-				"buffer_size": 1417,
+				"buffer_size": 1838,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/pages/demoApp.page",
+			"file": "resource-bundles/ng.resource/demoApp/specs/example_unit.js",
 			"settings":
 			{
-				"buffer_size": 505,
-				"line_ending": "Unix"
+				"buffer_size": 402,
+				"line_ending": "Unix",
+				"name": "describe(\"Unit Testing Examples\", function() {"
 			}
 		},
 		{
 			"file": "resource-bundles/ng.resource/demoApp/controllers/caController.js",
 			"settings":
 			{
-				"buffer_size": 139,
+				"buffer_size": 364,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/kpoorman/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 2256,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/kpoorman/Library/Application Support/Sublime Text 3/Packages/User/JavascriptBeautify.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 460,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,39 +572,55 @@
 			"file": "resource-bundles/ng.resource/demoApp/controllers/bcController.js",
 			"settings":
 			{
-				"buffer_size": 107,
+				"buffer_size": 290,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<div ui-view=\"true\">\n	<form>\n		<input type=\"text\" ng-model=\"databound.predicate\"/>\n\n	</form>\n	<button ng-click=\"bar()\">Click me</button>\n	<h1>Hello <span>{{databound.predicate}}</span> </h1>\n\n\n\n</div>",
+			"file": "resource-bundles/ng.resource/demoApp/controllers/AlertDemoCtrl.js",
 			"settings":
 			{
-				"buffer_size": 200,
+				"buffer_size": 370,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resource-bundles/ng.resource/demoApp/controllers/mainController.js",
+			"file": "src/pages/DA_bc_partial.page",
 			"settings":
 			{
-				"buffer_size": 1013,
+				"buffer_size": 543,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<a href=\"http://google.com\"></a>\n\n<a ng-href=\"'http://google.com?q='+query\"></a> \"http://google.com?q=bob\"",
+			"file": "resource-bundles/ng.resource/demoApp/services/userService.js",
 			"settings":
 			{
-				"buffer_size": 106,
+				"buffer_size": 1582,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/kpoorman/Documents/mmProjects/ClearChannel_ProposalPlus_ppDevK/resource-bundles/pp_ngApp.resource/cors_server.py",
+			"file": "resource-bundles/ng.resource/demoApp/services/caseService.js",
 			"settings":
 			{
-				"buffer_size": 2476,
+				"buffer_size": 874,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resource-bundles/ng.resource/demoApp/directives/userInfo.js",
+			"settings":
+			{
+				"buffer_size": 356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/ngResources.component",
+			"settings":
+			{
+				"buffer_size": 3192,
 				"line_ending": "Unix"
 			}
 		}
@@ -595,19 +628,43 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 301.0,
+		"height": 167.0,
 		"selected_items":
 		[
 			[
-				"dep",
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"gist ",
+				"GitHub: Private Gist from Selection"
+			],
+			[
+				"depl",
 				"MavensMate: Deploy Resource Bundle..."
+			],
+			[
+				"beautif",
+				"Javascript Beautify"
+			],
+			[
+				"bea",
+				"BeautifyRuby"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
 			],
 			[
 				"visual",
 				"MavensMate: New Visualforce Page"
 			],
 			[
-				"depl",
+				"dep",
 				"MavensMate: Deploy Resource Bundle..."
 			],
 			[
@@ -679,10 +736,6 @@
 				"SublimeAStyleFormatter: Format Current File"
 			],
 			[
-				"java",
-				"Set Syntax: Java"
-			],
-			[
 				"apex",
 				"MavensMate: New Apex Class"
 			],
@@ -697,10 +750,6 @@
 			[
 				"apecl",
 				"MavensMate: New Apex Class"
-			],
-			[
-				"tabs",
-				"Indentation: Convert to Tabs"
 			],
 			[
 				"trigg",
@@ -951,10 +1000,6 @@
 				"GitHub: Private Gist from Selection"
 			],
 			[
-				"javascr",
-				"Set Syntax: JavaScript"
-			],
-			[
 				"epl",
 				"Set Syntax: Plain Text"
 			],
@@ -1097,21 +1142,9 @@
 			[
 				"apex tests",
 				"MavensMate: Run Apex Tests..."
-			],
-			[
-				"astyle",
-				"SublimeAStyleFormatter: Format Current File"
-			],
-			[
-				"reinde",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"code",
-				"Format Code"
 			]
 		],
-		"width": 610.0
+		"width": 601.0
 	},
 	"console":
 	{
@@ -1131,12 +1164,29 @@
 	},
 	"file_history":
 	[
-		"/Users/kpoorman/Documents/mmProjects/ngtraining/src/pages/DA_bc_partial.page",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/protractor.conf.js",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/specs/basic_spec.js",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/src/pages/demoApp.page",
 		"/Users/kpoorman/Documents/mmProjects/ngtraining/src/pages/DA_ca_partial.page",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/src/pages/DA_bc_partial.page",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/controllers/AlertDemoCtrl.js",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/lib/angular.mocks.js",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/spec",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/node_modules/protractor/docs/using-mocha.md",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/node_modules/grunt-cli/completion/bash",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/package.json",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/src/pages/DA_userInfoTemplate.page",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/Gruntfile.js",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/node_modules/protractor/bin/webdriver-manager",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/cors_server.py",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/controllers/mainController.js",
+		"/Users/kpoorman/Library/Application Support/Sublime Text 3/Packages/User/mavensmate.sublime-settings",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/ngtraining.sublime-settings",
+		"/Users/kpoorman/Library/Application Support/Sublime Text 3/Packages/MavensMate/mavensmate.sublime-settings",
+		"/Users/kpoorman/Documents/mmProjects/ClearChannel_ProposalPlus_ppDevK/resource-bundles/pp_ngApp.resource/cors_server.py",
+		"/Users/kpoorman/Documents/mmProjects/ngtraining/src/components/ngResources.component",
 		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/lib/ui.router.min.js",
 		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/lib/angular-classy.min.js",
-		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/controllers/mainController.js",
-		"/Users/kpoorman/Documents/mmProjects/ngtraining/src/pages/demoApp.page",
 		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/lib/chosen.js",
 		"/Users/kpoorman/Documents/mmProjects/ngtraining/resource-bundles/ng.resource/demoApp/css/bootstrap.css.map",
 		"/Users/kpoorman/Documents/mmProjects/SMAuthDev/src/classes/TestUtils.cls",
@@ -1241,28 +1291,11 @@
 		"/Users/kpoorman/Documents/mmProjects/CCO - C2/resource-bundles/pp_ngApp.resource/pp_ngApp/services/demographicsService.js",
 		"/Users/kpoorman/Documents/mmProjects/CCO - C2/resource-bundles/pp_css_kpoorman.resource/pp_css/css/bootstrap-custom.css",
 		"/Users/kpoorman/Documents/mmProjects/CCO - C2/src/pages/IndividualFlightView.page",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/src/pages/searchGridView.page",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/resource-bundles/pp_ngApp_kpoorman.resource/pp_ngApp/services/flightService.js",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/resource-bundles/pp_ngApp_kpoorman.resource/pp_ngApp/services/searchService.js",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/resource-bundles/pp_ngApp_kpoorman.resource/pp_ngApp/controllers/gridViewCtrl.js",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/resource-bundles/pp_ngApp_kpoorman.resource/pp_ngApp/services/DemographicsService.js",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/src/objects/Demographic__c.object",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/src/classes/DescribeHelper.cls-meta.xml",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/src/objects/BLND_DFTE_Expense__c.object",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/resource-bundles/dev.zsh",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/src/objects/Deployment_Panel__c.object",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/src/classes/CPQ_CP_OverridePriceManager.cls",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/deploy/kevinp@madronasg.com.cco/2014-01-28 21:44:22/unpackaged/pages/ProposalPlus_Output_ModalCarouselPartial.page",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/deploy/kevinp@madronasg.com.cco/2014-01-28 21:44:22/unpackaged/objects/Demographic__c.object",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/deploy/kevinp@madronasg.com.cco/2014-01-28 21:44:22/unpackaged/staticresources/pp_kevin_css.resource",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/resource-bundles/share.zsh",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/src/classes/CPQ_KeyPrefix.cls",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/src/objects/abc__c.object",
-		"/Users/kpoorman/Documents/mmProjects/CCO - C2/resource-bundles/pp_ngApp_kpoorman.resource/pp_ngApp/services/ppUtils.js"
+		"/Users/kpoorman/Documents/mmProjects/CCO - C2/src/pages/searchGridView.page"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 52.0
 	},
 	"find_in_files":
 	{
@@ -1576,7 +1609,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -1585,15 +1618,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 519,
+						"buffer_size": 523,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								215,
-								215
+								13,
+								13
 							]
 						],
 						"settings":
@@ -1602,14 +1635,30 @@
 							"auto_name": "",
 							"bh_regions":
 							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1618,1119 +1667,18 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 112.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/components/ngResources.component",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1417,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1379,
-								1379
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 321.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/pages/demoApp.page",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 505,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								140,
-								140
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
-								"bh_regex_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "resource-bundles/ng.resource/demoApp/controllers/caController.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 139,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								133,
-								133
-							],
-							[
-								139,
-								139
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_name": "",
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "resource-bundles/ng.resource/demoApp/controllers/bcController.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 107,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								107,
-								107
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 200,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								194,
-								194
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "resource-bundles/ng.resource/demoApp/controllers/mainController.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1013,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								78
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
+								"bh_regex_close"
 							],
 							"codeintel": true,
 							"codeintel_config":
@@ -2847,19 +1795,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 1,
+					"file": "Gruntfile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 106,
+						"buffer_size": 1838,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								106,
-								106
+								994,
+								994
 							]
 						],
 						"settings":
@@ -2867,14 +1816,30 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -2883,10 +1848,1166 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
-								"bh_regex_close",
+								"bh_regex_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resource-bundles/ng.resource/demoApp/specs/example_unit.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "describe(\"Unit Testing Examples\", function() {",
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "resource-bundles/ng.resource/demoApp/controllers/caController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "",
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/kpoorman/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1536,
+								1538
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"gist":
+							{
+								"comments": 0,
+								"comments_url": "https://api.github.com/gists/277d128217f76a888049/comments",
+								"commits_url": "https://api.github.com/gists/277d128217f76a888049/commits",
+								"created_at": "2014-07-16T16:10:25Z",
+								"description": "SublimeLinterSetup",
+								"files":
+								{
+									"SublimeLinter.sublime-settings":
+									{
+										"content": "{\n    \"user\": {\n        \"debug\": true,\n        \"delay\": 0.25,\n        \"error_color\": \"D02000\",\n        \"gutter_theme\": \"Packages/SublimeLinter/gutter-themes/Blueberry/cross/Blueberry - cross.gutter-theme\",\n        \"gutter_theme_excludes\": [],\n        \"lint_mode\": \"background\",\n        \"linters\": {\n            \"annotations\": {\n                \"@disable\": false,\n                \"args\": [],\n                \"errors\": [\n                    \"FIXME\"\n                ],\n                \"excludes\": [],\n                \"warnings\": [\n                    \"TODO\",\n                    \"README\"\n                ]\n            },\n            \"csslint\": {\n                \"@disable\": false,\n                \"args\": [],\n                \"errors\": \"\",\n                \"excludes\": [],\n                \"ignore\": \"\",\n                \"warnings\": \"\"\n            },\n            \"golint\": {\n                \"@disable\": false,\n                \"args\": [],\n                \"excludes\": []\n            },\n            \"htmltidy\": {\n                \"@disable\": false,\n                \"args\": [],\n                \"excludes\": []\n            },\n            \"jshint\": {\n                \"@disable\": false,\n                \"args\": [],\n                \"excludes\": []\n            },\n            \"json\": {\n                \"@disable\": false,\n                \"args\": [],\n                \"excludes\": [],\n                \"strict\": true\n            },\n            \"ruby\": {\n                \"@disable\": false,\n                \"args\": [],\n                \"excludes\": []\n            }\n        },\n        \"mark_style\": \"solid underline\",\n        \"no_column_highlights_line\": false,\n        \"paths\": {\n            \"linux\": [],\n            \"osx\": [],\n            \"windows\": []\n        },\n        \"python_paths\": {\n            \"linux\": [],\n            \"osx\": [],\n            \"windows\": []\n        },\n        \"rc_search_limit\": 3,\n        \"shell_timeout\": 10,\n        \"show_errors_on_save\": false,\n        \"show_marks_in_minimap\": true,\n        \"syntax_map\": {\n            \"html (django)\": \"html\",\n            \"html (rails)\": \"html\",\n            \"html 5\": \"html\",\n            \"php\": \"html\",\n            \"python django\": \"python\"\n        },\n        \"warning_color\": \"DDB700\",\n        \"wrap_find\": true\n    }\n}",
+										"filename": "SublimeLinter.sublime-settings",
+										"language": "JSON",
+										"raw_url": "https://gist.githubusercontent.com/noeticpenguin/277d128217f76a888049/raw/fbfe4140a7e9766f8de6aecc5b28632f331ffb39/SublimeLinter.sublime-settings",
+										"size": 2256,
+										"truncated": false,
+										"type": "text/plain"
+									}
+								},
+								"forks":
+								[
+								],
+								"forks_url": "https://api.github.com/gists/277d128217f76a888049/forks",
+								"git_pull_url": "https://gist.github.com/277d128217f76a888049.git",
+								"git_push_url": "https://gist.github.com/277d128217f76a888049.git",
+								"history":
+								[
+									{
+										"change_status":
+										{
+											"additions": 83,
+											"deletions": 0,
+											"total": 83
+										},
+										"committed_at": "2014-07-16T16:10:25Z",
+										"url": "https://api.github.com/gists/277d128217f76a888049/e008ce39820bc27b7e2b34b5dff88e07003d8e51",
+										"user":
+										{
+											"avatar_url": "https://avatars.githubusercontent.com/u/376367?",
+											"events_url": "https://api.github.com/users/noeticpenguin/events{/privacy}",
+											"followers_url": "https://api.github.com/users/noeticpenguin/followers",
+											"following_url": "https://api.github.com/users/noeticpenguin/following{/other_user}",
+											"gists_url": "https://api.github.com/users/noeticpenguin/gists{/gist_id}",
+											"gravatar_id": "7729dc7078a4f73ecb4c3de6caabf893",
+											"html_url": "https://github.com/noeticpenguin",
+											"id": 376367,
+											"login": "noeticpenguin",
+											"organizations_url": "https://api.github.com/users/noeticpenguin/orgs",
+											"received_events_url": "https://api.github.com/users/noeticpenguin/received_events",
+											"repos_url": "https://api.github.com/users/noeticpenguin/repos",
+											"site_admin": false,
+											"starred_url": "https://api.github.com/users/noeticpenguin/starred{/owner}{/repo}",
+											"subscriptions_url": "https://api.github.com/users/noeticpenguin/subscriptions",
+											"type": "User",
+											"url": "https://api.github.com/users/noeticpenguin"
+										},
+										"version": "e008ce39820bc27b7e2b34b5dff88e07003d8e51"
+									}
+								],
+								"html_url": "https://gist.github.com/277d128217f76a888049",
+								"id": "277d128217f76a888049",
+								"owner":
+								{
+									"avatar_url": "https://avatars.githubusercontent.com/u/376367?",
+									"events_url": "https://api.github.com/users/noeticpenguin/events{/privacy}",
+									"followers_url": "https://api.github.com/users/noeticpenguin/followers",
+									"following_url": "https://api.github.com/users/noeticpenguin/following{/other_user}",
+									"gists_url": "https://api.github.com/users/noeticpenguin/gists{/gist_id}",
+									"gravatar_id": "7729dc7078a4f73ecb4c3de6caabf893",
+									"html_url": "https://github.com/noeticpenguin",
+									"id": 376367,
+									"login": "noeticpenguin",
+									"organizations_url": "https://api.github.com/users/noeticpenguin/orgs",
+									"received_events_url": "https://api.github.com/users/noeticpenguin/received_events",
+									"repos_url": "https://api.github.com/users/noeticpenguin/repos",
+									"site_admin": false,
+									"starred_url": "https://api.github.com/users/noeticpenguin/starred{/owner}{/repo}",
+									"subscriptions_url": "https://api.github.com/users/noeticpenguin/subscriptions",
+									"type": "User",
+									"url": "https://api.github.com/users/noeticpenguin"
+								},
+								"public": false,
+								"updated_at": "2014-07-16T16:10:25Z",
+								"url": "https://api.github.com/gists/277d128217f76a888049",
+								"user": null
+							},
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 696.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/kpoorman/Library/Application Support/Sublime Text 3/Packages/User/JavascriptBeautify.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								458,
+								458
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "resource-bundles/ng.resource/demoApp/controllers/bcController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								290,
+								290
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "resource-bundles/ng.resource/demoApp/controllers/AlertDemoCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -2895,22 +3016,811 @@
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/pages/DA_bc_partial.page",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "resource-bundles/ng.resource/demoApp/services/userService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1582,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1043,
+								742
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
-								"bh_tag_close"
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"gist":
+							{
+								"comments": 0,
+								"comments_url": "https://api.github.com/gists/0f6e12bbda3c910c69e5/comments",
+								"commits_url": "https://api.github.com/gists/0f6e12bbda3c910c69e5/commits",
+								"created_at": "2014-07-16T17:23:33Z",
+								"description": "userService",
+								"files":
+								{
+									"userService.js":
+									{
+										"content": "app.factory('userService', ['$q', '$log', 'sfrquery',\n	function($q, $log, sfrquery) {\n		/**\n		 * User Service encapsultates a given user.\n		 */\n\n		var userService = {\n			// internal (private) properties:\n			_user: {},\n			_userList: [],\n			_email: \"\",\n			_username: \"\",\n\n			// public methods\n			getUser: function() {\n				var pGetUser = sfrquery.query(\"SELECT Id, username, Email FROM user WHERE Alias = 'Chatter'\");\n				return pGetUser.then(userService.setUserDetails);\n			},\n			getUsers: function() {\n				var pGetUser1 = sfrquery.query(\"SELECT Id, username, Email FROM user\");\n				return pGetUser1.then(userService.setUserList);\n			},\n			setUserList: function(data) {\n				userService._userList = data;\n			},\n			userList: function(data) {\n				if (userService._userList && userService._userList.length > 0) {\n					return $q.when(userService._userList);\n				} else {\n					$q.when(userService.getUsers()).then(function(k) {\n						return $q.when(userService._userList);\n					});\n				}\n			},\n			setUserDetails: function(data) {\n				userService._user = data[0];\n				userService._email = data[0].Email;\n				userService._username = data[0].Username;\n				return data;\n			},\n			findUser: function() {\n\n			},\n			destroyUser: function() {\n\n			},\n			updateUser: function() {\n\n			},\n			email: function() {\n				if (userService._email) {\n					return userService._email;\n				} else {\n					return userService.getUser().then(function(x) {\n						$log.log(x);\n					});\n				}\n			},\n			username: function() {\n\n			}\n		};\n		return userService;\n	}\n]);",
+										"filename": "userService.js",
+										"language": "JavaScript",
+										"raw_url": "https://gist.githubusercontent.com/noeticpenguin/0f6e12bbda3c910c69e5/raw/a116244f178d9625f3c220816a0bf1795a163697/userService.js",
+										"size": 1524,
+										"truncated": false,
+										"type": "application/javascript"
+									}
+								},
+								"forks":
+								[
+								],
+								"forks_url": "https://api.github.com/gists/0f6e12bbda3c910c69e5/forks",
+								"git_pull_url": "https://gist.github.com/0f6e12bbda3c910c69e5.git",
+								"git_push_url": "https://gist.github.com/0f6e12bbda3c910c69e5.git",
+								"history":
+								[
+									{
+										"change_status":
+										{
+											"additions": 65,
+											"deletions": 0,
+											"total": 65
+										},
+										"committed_at": "2014-07-16T17:23:33Z",
+										"url": "https://api.github.com/gists/0f6e12bbda3c910c69e5/0255daed2a44450ff3aac5195bc81bb244226850",
+										"user":
+										{
+											"avatar_url": "https://avatars.githubusercontent.com/u/376367?",
+											"events_url": "https://api.github.com/users/noeticpenguin/events{/privacy}",
+											"followers_url": "https://api.github.com/users/noeticpenguin/followers",
+											"following_url": "https://api.github.com/users/noeticpenguin/following{/other_user}",
+											"gists_url": "https://api.github.com/users/noeticpenguin/gists{/gist_id}",
+											"gravatar_id": "7729dc7078a4f73ecb4c3de6caabf893",
+											"html_url": "https://github.com/noeticpenguin",
+											"id": 376367,
+											"login": "noeticpenguin",
+											"organizations_url": "https://api.github.com/users/noeticpenguin/orgs",
+											"received_events_url": "https://api.github.com/users/noeticpenguin/received_events",
+											"repos_url": "https://api.github.com/users/noeticpenguin/repos",
+											"site_admin": false,
+											"starred_url": "https://api.github.com/users/noeticpenguin/starred{/owner}{/repo}",
+											"subscriptions_url": "https://api.github.com/users/noeticpenguin/subscriptions",
+											"type": "User",
+											"url": "https://api.github.com/users/noeticpenguin"
+										},
+										"version": "0255daed2a44450ff3aac5195bc81bb244226850"
+									}
+								],
+								"html_url": "https://gist.github.com/0f6e12bbda3c910c69e5",
+								"id": "0f6e12bbda3c910c69e5",
+								"owner":
+								{
+									"avatar_url": "https://avatars.githubusercontent.com/u/376367?",
+									"events_url": "https://api.github.com/users/noeticpenguin/events{/privacy}",
+									"followers_url": "https://api.github.com/users/noeticpenguin/followers",
+									"following_url": "https://api.github.com/users/noeticpenguin/following{/other_user}",
+									"gists_url": "https://api.github.com/users/noeticpenguin/gists{/gist_id}",
+									"gravatar_id": "7729dc7078a4f73ecb4c3de6caabf893",
+									"html_url": "https://github.com/noeticpenguin",
+									"id": 376367,
+									"login": "noeticpenguin",
+									"organizations_url": "https://api.github.com/users/noeticpenguin/orgs",
+									"received_events_url": "https://api.github.com/users/noeticpenguin/received_events",
+									"repos_url": "https://api.github.com/users/noeticpenguin/repos",
+									"site_admin": false,
+									"starred_url": "https://api.github.com/users/noeticpenguin/starred{/owner}{/repo}",
+									"subscriptions_url": "https://api.github.com/users/noeticpenguin/subscriptions",
+									"type": "User",
+									"url": "https://api.github.com/users/noeticpenguin"
+								},
+								"public": false,
+								"updated_at": "2014-07-16T17:23:33Z",
+								"url": "https://api.github.com/gists/0f6e12bbda3c910c69e5",
+								"user": null
+							},
+							"open_with_edit": true,
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "resource-bundles/ng.resource/demoApp/services/caseService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "resource-bundles/ng.resource/demoApp/directives/userInfo.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "",
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/components/ngResources.component",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2958,
+								2970
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
 							],
 							"codeintel": true,
 							"codeintel_config":
@@ -3019,88 +3929,10 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 116.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/Users/kpoorman/Documents/mmProjects/ClearChannel_ProposalPlus_ppDevK/resource-bundles/pp_ngApp.resource/cors_server.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2476,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1103.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -3156,6 +3988,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"user",
+				"resource-bundles/ng.resource/demoApp/services/userService.js"
+			],
+			[
+				"bc",
+				"resource-bundles/ng.resource/demoApp/controllers/bcController.js"
+			],
+			[
+				"da_bc",
+				"src/pages/DA_bc_partial.page"
+			],
+			[
+				"da_ca",
+				"src/pages/DA_ca_partial.page"
+			],
 			[
 				"opprentest",
 				"src/classes/OppRenewalLibTest.cls"
@@ -3651,22 +4499,6 @@
 			[
 				"db_",
 				"src/classes/DB_OpportunityMethods.cls"
-			],
-			[
-				"curr",
-				"src/classes/UpdateCurrencyDataFromApi.cls"
-			],
-			[
-				"updateaccou",
-				"src/classes/UpdateAccountsFromConsole.cls"
-			],
-			[
-				"opportunig",
-				"src/classes/OpportunityTriggerHandler.cls"
-			],
-			[
-				"line",
-				"src/classes/LineItemTriggerHandler.cls"
 			]
 		],
 		"width": 0.0
@@ -3694,7 +4526,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 359.0,
+	"side_bar_width": 260.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

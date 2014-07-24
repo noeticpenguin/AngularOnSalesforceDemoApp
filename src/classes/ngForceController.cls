@@ -12,7 +12,7 @@ global class ngForceController {
 	public class Select2Data {
 		String id               {get; set;}
 		String name             {get; set;}
-		String searchName {get; set;}
+		String searchName 			{get; set;}
 	}
 
 	public class QueryString {
