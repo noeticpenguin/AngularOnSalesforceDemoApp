@@ -34,7 +34,7 @@ Custom Visualforce components provide handy containers for re-usable bits of cod
 ```html
 <apex:component>
 <!-- Css -->
-<apex:stylesheet value="{!URLFOR($Resource.GNE_CM_MPS_Portal_Styles, '/css/physicianportal.css')}" />
+<apex:stylesheet value="{!URLFOR($Resource.Styles, '/css/physicianportal.css')}" />
 <!-- Javascript Libraries -->
 <apex:includeScript value="{!URLFOR($Resource.ng, 'demoApp/lib/angular.min.js')}"/>
 <!-- Application Module -->
@@ -67,7 +67,9 @@ Angular.module('demoApp')
 
 inserting a line break, and starting the fluid api (with a period) on the next line, indented one leve.
 
-###Naming Conventions While there is no single accepted naming convention, what follows is a decent set of conventions to start conversation amongst your team.
+###Naming Conventions
+
+While there is no single accepted naming convention, what follows is a decent set of conventions to start conversation amongst your team.
 
 1. Variables (that are for more than itteration within a loop) should be self-descriptive.
 2. Modules except directives should include their "type"
@@ -167,7 +169,171 @@ $q.all([ promise1, promise2 ]).then($q.spread(function (promise1Result, promise2
 });
 ```
 
-### Service Example 1
+### Debugging AngularJS apps from the Browser JS Console
+
+While there exists a semi-official debugging extension for Chrome called "AngularJS Batarang" it is outdated, buggy and prone to incorrectly identifying nested scopes. Instead of using the Batarang, I suggest using the ng-inspector extension available for Chrome and Safari. You can find the chrome version here: [Chrome Ng-Inspector](https://chrome.google.com/webstore/detail/ng-inspector-for-angularj/aadgmnobpdmgmigaicncghmmoeflnamj) and the safari version here: [safari Ng-Inspector](http://ng-inspector.org/ng-inspector.safariextz) 
+
+####A note on Chrome as a development platform
+The Angular team seems to exclusively use Chrome for development (they are google employees after all), but more specifically, they seem to use bleeding edge chrome. This has, in the past bitten the Angular community at least once, where the "stable" version of Chrome and the "stable" version of Angular interacted in such a way as to swallow and hide errors. If you're experiencing an unexpected refusal of the app to render, or other wise function in chrome without any errors in the JS console, test your app in Firefox, or Safari to discover the error. 
+
+####Accessing any scope within an App.
+Like jQuery's much lauded $(Selector) syntax you can grab hold of elements by their CSS selectors using Angular's built in element method like this:
+
+```javascript
+angular.element('#someId');
+```
+
+You can extend this with methods like ```.scope()``` to gain access to the scope attached to that specific css selector. With this combination, you can access any scope on the page - Nested and Isolated scopes as well. Just like this:
+
+```javascript
+angular.element('#myAwesomeElement').scope();
+```
+
+One note. If you are trying to access a directive's isolated scope the method signature is slightly different. 
+
+```javascript
+angular.element('#myAwesomeElement').isolateScope();
+```
+
+####Accessing Services from the Console.
+There will likely be times you want to access various services from the console. This is an ***Invaluable*** tool in debugging. To access services from the console utilize the following snippet of code:
+
+```javascript
+var SERVICE_NAME = angular.element('html').injector().get('SERVICE NAME HERE');
+```
+As services are always singletons in the Angular world, this will return to you the exact service in use by your controllers, and directives. You can then call methods on your service just like you would any other JS object.
+
+```javascript
+SERVICE_NAME.someMethod();
+```
+This is invaluable for discovering where in a promise chain, for instance, something is failing.
+
+####Chrome specific Debugging tools:
+
+Chrome has a number of javascript debugging tools that are quite handy, but sadly specific to Chrome. In no particular order they are:
+
+- ```$_``` is always equal to the value of the last expression. If, for instance you ran a command and intended to assign it to a variable but forgot, you can ***on the very next line*** run var ```x = $_;``` which will assign x the value of the previous commands return value. Very handy.
+- $0, $1, $2, $3 and $4 are the last 5 css selectors selected. You can, therefore use them in scope and service accessor calls like this: ``` angular.element('$2').scope();```
+- ```$(selector)``` is a chrome shortcut for ```querySelector()```
+- ```$$(selector)``` is a chrome shortcut for ```querySelectorAll()```
+
+### Getting Started (Windows, Linux and Mac)
+This guide assumes you're using a relatively recent and sane distribution of Linux, Windows 7 or OS X 10.9 or higher. 
+
+This github repo contains a Gruntfile.js and a package.json file. Between the two of these preconfigured files, you can get 90% of the way to being setup. Unfortunately, the 10% remaining has to be done first. 
+
+Our "tooling stack" is built from the following components
+
+|Component Name| Purpose | Homepage|
+----------------------|------------------|-----------------------|
+|Node.js|Running JS Code outside the browser| [nodejs.org](nodejs.org)|
+|Grunt|Task runner and Automation tool|[gruntjs.com](gruntjs.com)|
+|PhantomJS|Headless Chrome Browser for quicker testing|[phantomjs.org/](http://phantomjs.org/)|
+
+Some of these must be installed before we can run our bootstrap script. Namely Node.js *must* be installed. 
+
+|OS |Installation Package| Installation Instructions|
+----|-----|-----|
+Linux|Varies, see your Linux package manager| Follow your Package managers instructions|
+Windows 32Bit|[Http://nodejs.org/dist/v0.10.30/node-v0.10.30-x86.msi](http://nodejs.org/dist/v0.10.30/node-v0.10.30-x86.msi)| Download and follow instructions in the installer|
+Windows 64Bit|[http://nodejs.org/dist/v0.10.30/x64/node-v0.10.30-x64.msi](http://nodejs.org/dist/v0.10.30/x64/node-v0.10.30-x64.msi)| Download and following instructions in the installer|
+OS X| First, Install Homebrew from here: [http://brew.sh/](http://brew.sh/) |run `brew install node` after installing homebrew|
+
+The following instructions may have to be adapted for path and command line peculiars depending on your OS.
+
+Once you've installed Node, you should have access to the `npm` command in your terminal or shell of choice. Npm is the pacakge manager for node, and how we'll bootstrap the rest of our dependencies. If you cannot type `npm -v` and get a version # back, then you may have to restart your shell/terminal or manually provide the path to npm, wherever it is installed. (as the installation path can vary depending on OS, and even per-installation if user-overridden, this is left as an exercise to the reader). Once you have verified that npm is working, run the following command in the same directory as package.json (the root folder for this project)
+
+`npm install`
+
+Once npm has installed everything, you'll need to run webdriver-manager to install the selenium webdriver tool needed by protractor. This can be acomplished by running: `webdriver-manager update` This too, will take awhile. Windows users will need to take care to execute this script with node.js with a command line that resembles: `node webdriver-manager update` paying careful attention to proper paths.
+
+This will likely take awhile, as it's going to install phantom, instanbul, jasmine and protractor for you. Once it has completed the installation of everything, you should be able to execute `grunt` within that same directory and have grunt attempt to run protractor. Protractor will undoubtably ***Fail*** but if it runs at all, our test of the grunt system has passed. 
+
+Within the Gruntfile.js there is a segment specifying the configuration options for protractor that looks like this:
+```javascript
+protractor: {
+			options: {
+				configFile: "./resource-bundles/ng.resource/demoApp/protractor.conf.js", // Default config file
+				keepAlive: true, // If false, the grunt process stops when the test fails.
+				noColor: false, // If true, protractor will not use colors in its output.
+				verbose: true,
+				seleniumServerJar: "/usr/local/lib/node_modules/protractor/selenium/selenium-server-standalone-2.42.2.jar",
+				seleniumPort: 4444,
+				args: {
+					// Arguments passed to the command
+				}
+			},
+		},
+```
+
+You need to ensure that the configFile path, and the seleniumServerJar path are valid and correct for your installation. Different OS's place the Selenium file in different directories, so pay careful attention to the output of `webdriver-manager update`
+
+#### Serving JS assets locally
+Perhaps the biggest downside to Angular on Visualforce development is the length of the feedback look. Developing a feature or fixing a bug is delayed by the length of time it takes Salesforce to handle the upload of the Static resource bundle. To mitigate this, I recommend using a local HTTP server that is both CORS enabled and HTTPS enabled to serve your JS files during development. Within this repo's ng.resources directory there exists two key files to enable this: a python file named cors_server.py and a server.pem. The python file is a dirt-simple, bare-bones HTTPS, and CORS enabled webserver that utilizes the server.pem for doing HTTPS. the server.pem file is currently a self-signed cert created by me, on my machine. You can of course replace it with your own, so long as it's named `server.pem`. Cors_server.py will server all files beneath it in the directory tree with Cors headers, via HTTPS. To run it, type `python cors_server.py` on the command line within that directory. Once the server is started you need to clone your resources component and give it the name `dev_resources`. Ensure that your master application page is set to use `dev_resources` as a component `<c:dev_resources/>` and save it. Then modify your dev_resources component to load from localhost:8000 rather than salesforce. Like this:
+
+```html
+<apex:component>
+<!-- Application Module -->
+<!-- instead of -->
+	<!--<apex:includeScript value="{!URLFOR($Resource.ng, 'demoApp/application.js')}"/>-->
+<!--use-->
+<script type="text/javascript" src="https://localhost:8000/demoApp/application.js"/>
+
+<script type="text/javascript" src="https://localhost:8000/demoApp/controllers/managePatientsCtrl.js"/>
+
+<!-- Ng Application Controllers -->
+<script type="text/javascript" src="https://localhost:8000/demoApp/controllers/managePatientsCtrl.js"/>
+
+<!-- Ng Application Services -->
+<script type="text/javascript" src="https://localhost:8000/demoApp/services/patientService.js"/>
+
+<!-- Ng Application Directives -->
+<script type="text/javascript" src="https://localhost:8000/demoApp/directives/loadingContainer.js"/>
+</apex:component>
+``` 
+
+The ***Key*** difference is that this component uses standard HTML script include tags, rather than visualforce includeScript tags, and that we're pointing the src attribute at https://localhost:8000
+
+Once you've completed the following (recap) of steps you'll be loading js files directly from your local machine.
+
+1. install python ([https://www.python.org/download/](https://www.python.org/download/))
+2. clone resources.component, with the new name dev_resources
+3. edit dev_resources to use standard script include tags and ensure the src attribute is set to a https://localhost:8000 url.
+4. edit your master application Visualforce page to use `<c:dev_resources/>` instead of `<c:resources/>`
+5. run python `cors_server.py` on the command line
+6. Reload your application and verify that the command line from step #5 is showing that it's serving files. It should look something like this:
+
+```
+127.0.0.1 - - [01/Aug/2014 15:53:53] "GET /demoApp/filters/noFractionCurrency.js HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2014 15:53:53] "GET /demoApp/filters/autolink.js HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2014 15:53:53] "GET /demoApp/filters/dynamic.js HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2014 15:53:56] "GET /demoApp/application.js HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2014 15:53:56] "GET /demoApp/filters/percentage.js HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2014 15:53:56] "GET /demoApp/filters/autolink.js HTTP/1.1" 200 -
+```
+
+At this point, you've successfully setup local serving of js assets and can now modify your services, controllers etc. locally and upon saving them simply reload the page. Your browser will pull the new version from localhost. You'll still need to upload the static resource when your done developing, but now you only need to do that once, when your done.
+
+###Testing with Jasmine and Protractor
+
+The angular testing world has seen a set of major updates since our training. This document reflects the *updated* best practices and standard tools. The testing stack for Angular uses a few additional npm modules that were installed during your `npm install` run and consist of:
+
+|Name|Purpose|URL|Notes|
+---|---|---|---|
+AngularMocks.js|Allows us to inject and mock Angular Services in unit tests|[https://code.angularjs.org/1.2.21/](https://code.angularjs.org/1.2.21/)| The angular-mocks.js version must match your angular.js version!|
+|Mocha|Node.js based Testing Framework|[http://visionmedia.github.io/mocha/](http://visionmedia.github.io/mocha/)|Allows us to write `describe` blocks|
+|Chai|Mocha Extension for Behavior-driven Development|[http://chaijs.com/](http://chaijs.com/)|Provides assertions like expect, should and assert|
+|Chai-As-Promised|Chai Extension for Promises|[http://chaijs.com/plugins/chai-as-promised](http://chaijs.com/plugins/chai-as-promised)|Provides promise based assertions and matchers like: `to.be.fulfilled` and `expect(foo).to.eventually.equal(bar)`
+|Sinon|Stubbing and Mocking Library|[http://sinonjs.org/](http://sinonjs.org/)|We use this to mock out directive and controller deps in unit tests and to assert methods are called with proper arguments|
+|Browserify|Allows us to require modules|[http://browserify.org/](http://browserify.org/)|Used to require various modules needed in our tests|
+|Partialify|Removes dependency on actual SF connections for Templates|[https://www.npmjs.org/package/partialify](https://www.npmjs.org/package/partialify)| Allows us to inline templates into directives and tests|
+|Lodash|Basically the Std Lib for Javascript. ***Use lowdash***|[http://lodash.com/](http://lodash.com/)|Provides a wealth of missing standard methods and functions to round out javascript as a language|
+|Istanbul|Code Coverage Reports|[gotwarlost.github.io/istanbul/](http://gotwarlost.github.io/istanbul/)| Code Coverage reports for JS tests
+|Grunt-Mocha-Instanbul|Integrate Mocha and Instanbul in Grunt|[https://github.com/pocesar/grunt-mocha-istanbul](https://github.com/pocesar/grunt-mocha-istanbul)|Allows us to run tests, and gather code coverage with a simple grunt command.
+
+### Code Examples:
+
+#### Service Example 1
 
 ```javascript
 angular.module("MyPatientsPage")

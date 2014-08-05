@@ -1,30 +1,51 @@
 {
-    "folders": [
-        {
-            "folder_exclude_patterns": [
-                "config/.symbols"
-            ], 
-            "path": "."
-        }
-    ], 
-    "settings": {
-        "auto_complete_triggers": [
-            {
-                "characters": ".", 
-                "selector": "source - comment"
-            }, 
-            {
-                "characters": ":", 
-                "selector": "text.html - comment"
-            }, 
-            {
-                "characters": "<", 
-                "selector": "text.html - comment"
-            }, 
-            {
-                "characters": " ", 
-                "selector": "text.html - comment"
-            }
-        ]
-    }
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"config/.symbols"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "config"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "node_modules"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "resource-bundles"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "src"
+		}
+	],
+	"settings":
+	{
+		"auto_complete_triggers":
+		[
+			{
+				"characters": ".",
+				"selector": "source - comment"
+			},
+			{
+				"characters": ":",
+				"selector": "text.html - comment"
+			},
+			{
+				"characters": "<",
+				"selector": "text.html - comment"
+			},
+			{
+				"characters": " ",
+				"selector": "text.html - comment"
+			}
+		]
+	}
 }
