@@ -1,16 +1,18 @@
-app.controller('mainController', ['$scope', '$log', function ($scope, $log) {
-	
-	$scope.databound = {};
-	$scope.boundOnce = {};
-	$scope.databound.predicate = 'world';
-	$scope.boundOnce.statesOfTheUS = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'];
-	$scope.databound.selectedStates = [];
+app.controller('mainController', ['$scope', '$log',
+	function($scope, $log) {
 
-	$scope.bar = function() {
-		$log.log("Logging with the Log Service", $scope);
-		// $log.debug debug=true
-		// $log.error 
-		// $log.warn  
-	};
+		$scope.databound = {};
+		$scope.boundOnce = {};
+		$scope.databound.predicate = 'world';
+		$scope.boundOnce.statesOfTheUS = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'];
+		$scope.databound.selectedStates = [];
 
-}])
+		$scope.bar = function() {
+			$log.log("Logging with the Log Service", $scope);
+			// $log.debug debug=true
+			// $log.error 
+			// $log.warn  
+		};
+
+	}
+]);

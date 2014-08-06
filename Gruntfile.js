@@ -2,6 +2,7 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt, {
 		pattern: ['grunt-*', '!grunt-template-jasmine-istanbul', 'which']
 	});
+
 	grunt.initConfig({
 		protractor: {
 			options: {
@@ -16,23 +17,33 @@ module.exports = function(grunt) {
 				}
 			},
 		},
-		mocha_istanbul: {
-			coverage: {
-				src: 'resource-bundles/ng.resource/demoApp/specs', // the folder, not the files,
+		jasmine: {
+			default: {
+				src: [
+					'resource-bundles/ng.resource/demoApp/application.js',
+					'resource-bundles/ng.resource/demoApp/controllers/*.js',
+					'resource-bundles/ng.resource/demoApp/directives/*.js',
+					'resource-bundles/ng.resource/demoApp/filters/*.js',
+					'resource-bundles/ng.resource/demoApp/services/userService.js',
+				],
 				options: {
-					mask: '*.unit.spec.js',
-					check: {
-						lines: 75,
-						statements: 75,
-						branches: 75,
-						functions: 75
-					},
-					root: './resource-bundles/ng.resource/', // define where the cover task should consider the root of libraries that are covered by tests
-					excludes: ['resource-bundles/ng.resource/demoApp/specs/*.js'], // this excludes your tests from code coverage reports.
-					reportFormats: ['html', 'lcov'], // what style report do you want?
-				}
+					vendor: [
+						'resource-bundles/ng.resource/demoApp/lib/jquery-2.1.1.min.js',
+						'resource-bundles/ng.resource/demoApp/lib/angular.min.js',
+						'resource-bundles/ng.resource/demoApp/lib/lodash.underscore.min.js',
+						'resource-bundles/ng.resource/demoApp/lib/Restangular.min.js',
+						'resource-bundles/ng.resource/demoApp/lib/safeApply.min.js',
+						'resource-bundles/ng.resource/demoApp/lib/ngForce.js',
+						'resource-bundles/ng.resource/demoApp/lib/ui-bootstrap-tpls-0.11.0.min.js',
+						'resource-bundles/ng.resource/demoApp/lib/ui.router.min.js',
+						'resource-bundles/ng.resource/demoApp/lib/angular.mocks.js'
+					],
+					specs: ['./resource-bundles/ng.resource/demoApp/specs/**/*.unit.spec.js']
+				},
+				version: '2.0.0'
 			}
 		}
 	});
-	grunt.registerTask('default', 'mocha_istanbul');
+
+	grunt.registerTask('default', 'jasmine');
 };

@@ -1,4 +1,4 @@
-describe("userService", function() {
+describe("DemoUnitTest", function() {
 
 	var x = 0;
 	var y = {
@@ -19,7 +19,6 @@ describe("userService", function() {
 		x = y.inc(x);
 		expect(x).toEqual(2);
 	});
-
 
 	afterEach(function() {
 		x = 0;

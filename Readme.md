@@ -314,22 +314,66 @@ Once you've completed the following (recap) of steps you'll be loading js files 
 
 At this point, you've successfully setup local serving of js assets and can now modify your services, controllers etc. locally and upon saving them simply reload the page. Your browser will pull the new version from localhost. You'll still need to upload the static resource when your done developing, but now you only need to do that once, when your done.
 
-###Testing with Jasmine and Protractor
+###Testing with Mocha and Protractor
 
 The angular testing world has seen a set of major updates since our training. This document reflects the *updated* best practices and standard tools. The testing stack for Angular uses a few additional npm modules that were installed during your `npm install` run and consist of:
 
 |Name|Purpose|URL|Notes|
 ---|---|---|---|
 AngularMocks.js|Allows us to inject and mock Angular Services in unit tests|[https://code.angularjs.org/1.2.21/](https://code.angularjs.org/1.2.21/)| The angular-mocks.js version must match your angular.js version!|
-|Mocha|Node.js based Testing Framework|[http://visionmedia.github.io/mocha/](http://visionmedia.github.io/mocha/)|Allows us to write `describe` blocks|
-|Chai|Mocha Extension for Behavior-driven Development|[http://chaijs.com/](http://chaijs.com/)|Provides assertions like expect, should and assert|
-|Chai-As-Promised|Chai Extension for Promises|[http://chaijs.com/plugins/chai-as-promised](http://chaijs.com/plugins/chai-as-promised)|Provides promise based assertions and matchers like: `to.be.fulfilled` and `expect(foo).to.eventually.equal(bar)`
-|Sinon|Stubbing and Mocking Library|[http://sinonjs.org/](http://sinonjs.org/)|We use this to mock out directive and controller deps in unit tests and to assert methods are called with proper arguments|
 |Browserify|Allows us to require modules|[http://browserify.org/](http://browserify.org/)|Used to require various modules needed in our tests|
 |Partialify|Removes dependency on actual SF connections for Templates|[https://www.npmjs.org/package/partialify](https://www.npmjs.org/package/partialify)| Allows us to inline templates into directives and tests|
 |Lodash|Basically the Std Lib for Javascript. ***Use lowdash***|[http://lodash.com/](http://lodash.com/)|Provides a wealth of missing standard methods and functions to round out javascript as a language|
 |Istanbul|Code Coverage Reports|[gotwarlost.github.io/istanbul/](http://gotwarlost.github.io/istanbul/)| Code Coverage reports for JS tests
-|Grunt-Mocha-Instanbul|Integrate Mocha and Instanbul in Grunt|[https://github.com/pocesar/grunt-mocha-istanbul](https://github.com/pocesar/grunt-mocha-istanbul)|Allows us to run tests, and gather code coverage with a simple grunt command.
+|Jasmine-as-promised|Promise Matchers for Jasmine|[https://www.npmjs.org/package/jasmine-as-promised](https://www.npmjs.org/package/jasmine-as-promised)|Enables testing promise based code without writing waitAs() methods.|
+Once you've setup your test framework you can write your unit tests like this:
+
+```javascript
+//This next line defines a suite of tests using the describe method
+describe("DemoUnitTest", function() {
+
+	// some general setup run once per suite before everything else.
+	var x = 0;
+	var y = {
+		inc: function(x) {
+			return x + 1;
+		}
+	};
+
+	// Defines a function that is called before every individual test.
+	beforeEach(function() {
+		x += x + 1;
+	});
+
+	// the it method is used to define a test.
+	it("should start with the value of 1", function() {
+		// the expect method is used to write assertions based on behavior.
+		// in this case we expect that the behavior of x (above) is to be equal to 1
+		// because the beforeEach method takes X and adds 1 to it.
+		expect(x).toEqual(1);
+	});
+
+	// A second Test.
+	it("should be able to increment by 1, using the y.inc method", function() {
+		// execercise some code!
+		x = y.inc(x);
+		// now we can make an assertion (expectation) that x is equal to 2, because 
+		// the before each set it to 1, and calling y.inc(x) adds one to the value of x
+		expect(x).toEqual(2);
+	});
+	
+	// Just like the beforeEach method runs before each test, the afterEach method runs 
+	// after every test and in our case is used to reset x back to 0.
+	afterEach(function() {
+		x = 0;
+	});
+// here we end our suite.
+});
+``` 
+
+For more testing examples, look at the JasmineDemo.unit.spec.js file. 
+Additionally, read up on testing AngularJS in particularl with Jasmine-as-promised here:
+[https://github.com/ThomasBurleson/jasmine-as-promised/blob/master/test/test_withAngular.html](https://github.com/ThomasBurleson/jasmine-as-promised/blob/master/test/test_withAngular.html)
 
 ### Code Examples:
 
@@ -366,4 +410,106 @@ angular.module("MyPatientsPage")
 		};
 		return patientService;
 	});
+```
+
+#### Service Example 2 (using minifiable style dependency injection)
+```javascript
+angular.module('demoApp').factory('caseService', ['$q', '$log', 'sfrquery', function ($q,$log,sfrquery) {
+	
+	var caseService = {
+		_cases: [], //by convention, _ denotes a private variable
+		_patient: {
+			Id: '003o0000003OB00'
+		},
+		_patientId: '003o0000003OB00',
+		//Methods
+		
+		setPatient: function(patient){
+			_patient = patient;
+		},
+		getCases: function(){
+			var pGetCases = sfrquery.query(caseService.getCasesForPatientQuery());
+			pGetCases.then(caseService.setListOfCases);
+		},
+		setListOfCases: function(data){
+			caseService._cases = data;
+		},
+		getCasesForPatientQuery: function() {
+			//@todo make sure _patient is valid
+			return "SELECT Id, CaseNumber, priority, Description FROM Case WHERE contactId = '" + caseService._patient.Id + "'";
+		},
+		getHighPriorityCases: function() {
+			return _.where(caseService._cases, function(caseitem){
+				return (caseitem.Priority == 'High');
+			});
+		}
+	};
+	return caseService;
+}]);
+```
+
+#### Controller Example #1
+```javascript
+//angular.module() is both a setter, for creating a module, and
+// if given a single argument, a getter.
+// rather than using a global var App to attach our controllers
+// services, etc. to. just call angular.module('moduleName').whatever()
+angular.module('demoApp').controller('caController', ['$scope', '$log', 'userService', 
+	function ($scope, $log, userService) {
+
+	$scope.loaded = "true";
+	$scope.showedByButton = false;
+
+	userService.getUsers().then(function(x){
+		$log.log(x);
+		$log.log(userService._userList);
+		$scope.users = userService._userList;
+	});
+
+	// $log.log("GetEmail results:", userService.email());
+
+}]);
+```
+
+#### Example Application Module definition
+
+```javascript
+// this block defines the 'demoApp' module, with 4 dependencies
+// named: ui.bootstrap, localytics.directives, ui.router and ngForce
+angular.module('demoApp', [
+	'ui.bootstrap', 'localytics.directives', 'ui.router',  
+	'ngForce'
+	]);
+
+angular.module('demoApp').
+  // The config block of an Angular application module
+  // is where you'll configure run-once application
+  // settings. In this case, the state diagram
+  // for ui.router to use.
+  config(function($stateProvider, $urlRouterProvider) {
+	$stateProvider.
+		// each state() block here defines a different 
+		// "state" identified by the first argument
+		// the templateUrl key can point to a fully
+		// featured VF page, complete with VF Controllers
+		// etc.
+		// the controller key is an Angular controller 
+		// to be instantiated upon successful
+		// state change. 
+		// the url key is a string representing what will 
+		// be appended to the master application page url
+		// upon navigation to that state. ie:
+		// www.foo.com/bar/#BritishColumbia
+		state('BritishColumbia',{
+			url: "/BritishColumbia",
+			templateUrl: "/apex/DA_bc_partial",
+			controller: "bcController"
+		}).
+		state('California', {
+			url: "/California",
+			templateUrl: "/apex/DA_ca_partial",
+			controller: "caController"
+		});
+		$urlRouterProvider.otherwise("/California");
+  });
 ```
